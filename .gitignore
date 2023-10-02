@@ -1,160 +1,133 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+#1
+a = int(input())
+first = a//1000
+second = a//100%10
+third = a//10%10
+four = a%10
 
-# C extensions
-*.so
+if ((first + four) == (second-third)):
+    print("yes")
+else:
+    print("no")
 
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
 
-# PyInstaller
-#  Usually these files are written by a python script from a template
-#  before PyInstaller builds the exe, so as to inject date/other infos into it.
-*.manifest
-*.spec
+#2
+a = int(input())
+if(a>=18):
+    print("Access is allowed")
+else:
+    print("Access denied")
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-cover/
+#3
+a=int(input())
+b=int(input())
+c=int(input())
+if b- a == c-b:
+    print('YES')
+else:
+    print('no')
 
-# Translations
-*.mo
-*.pot
 
-# Django stuff:
-*.log
-local_settings.py
-db.sqlite3
-db.sqlite3-journal
+#4
+x1= int(input())
+y1= int(input())
+x2= int(input())
+y2= int(input())
 
-# Flask stuff:
-instance/
-.webassets-cache
+if x1 == x2 or y1 == y2:
+    print('YES')
+else:
+    print('NO')
 
-# Scrapy stuff:
-.scrapy
 
-# Sphinx documentation
-docs/_build/
+#5
+x1= int(input())
+y1= int(input())
+x2= int(input())
+y2= int(input())
 
-# PyBuilder
-.pybuilder/
-target/
+if ( -1 <= x1 - x2 <= 1) and (-1 <= y1 - y2 <= 1):
+    print('yes')
+else:
+    print('no')
 
-# Jupyter Notebook
-.ipynb_checkpoints
 
-# IPython
-profile_default/
-ipython_config.py
+#6
+a=int(input())
+b=int(input())
+c=int(input())
 
-# pyenv
-#   For a library or package, you might want to ignore these files since the code is
-#   intended to run in multiple environments; otherwise, check them in:
-# .python-version
+if c < a < b or b < a < c:
+    print(a)
+elif c < b < a or a < b < c:
+    print(b)
+else:
+    print(c)
 
-# pipenv
-#   According to pypa/pipenv#598, it is recommended to include Pipfile.lock in version control.
-#   However, in case of collaboration, if having platform-specific dependencies or dependencies
-#   having no cross-platform support, pipenv may install dependencies that don't work, or not
-#   install all needed dependencies.
-#Pipfile.lock
+#7
+m = int(input())
+if m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10 or m == 12:
+    print(31)
+elif m == 4 or m == 6 or m == 9 or m == 11:
+    print(30)
+else:
+    print(28)
 
-# poetry
-#   Similar to Pipfile.lock, it is generally recommended to include poetry.lock in version control.
-#   This is especially recommended for binary packages to ensure reproducibility, and is more
-#   commonly ignored for libraries.
-#   https://python-poetry.org/docs/basic-usage/#commit-your-poetrylock-file-to-version-control
-#poetry.lock
+#8
+weight = int(input())
 
-# pdm
-#   Similar to Pipfile.lock, it is generally recommended to include pdm.lock in version control.
-#pdm.lock
-#   pdm stores project-wide configurations in .pdm.toml, but it is recommended to not include it
-#   in version control.
-#   https://pdm.fming.dev/#use-with-ide
-.pdm.toml
+if weight < 60:
+    print("Light weight")
+elif weight < 64:
+    print("First welterweight")
+else:
+    print("Welterweight")
 
-# PEP 582; used by e.g. github.com/David-OConnor/pyflow and github.com/pdm-project/pdm
-__pypackages__/
+#9
+password = input()
+repassword = input()
+if password == repassword:
+    print("Password accepted")
+else:
+    print("Password not accepted")
 
-# Celery stuff
-celerybeat-schedule
-celerybeat.pid
+#10
+a = int(input())
 
-# SageMath parsed files
-*.sage.py
+if a % 2 == 0:
+    print('Even value')
+else:
+    print('Odd number')
 
-# Environments
-.env
-.venv
-env/
-venv/
-ENV/
-env.bak/
-venv.bak/
 
-# Spyder project settings
-.spyderproject
-.spyproject
+#11
+a, b = int(input()), int(input())
 
-# Rope project settings
-.ropeproject
+if a < b:
+    print(a)
+else:
+    print(b)
 
-# mkdocs documentation
-/site
+#12
+age = int(input())
 
-# mypy
-.mypy_cache/
-.dmypy.json
-dmypy.json
+if age <= 13:
+    print('inclusive-childhood')
+if 13 < age < 25:
+    print('youth')
+if 24 < age < 59:
+    print('maturity')
+if age > 59:
+    print('old age')
 
-# Pyre type checker
-.pyre/
-
-# pytype static type analyzer
-.pytype/
-
-# Cython debug symbols
-cython_debug/
-
-# PyCharm
-#  JetBrains specific template is maintained in a separate JetBrains.gitignore that can
-#  be found at https://github.com/github/gitignore/blob/main/Global/JetBrains.gitignore
-#  and can be added to the global gitignore or merged into this file.  For a more nuclear
-#  option (not recommended) you can uncomment the following to ignore the entire idea folder.
-#.idea/
+#13
+n = int(input())
+k = int(input())
+b = int(input())
+if n == k == b:
+    print('Equailatereal')
+elif n == k != b or n == b != k or b == k != n:
+    print('Isosceles')
+else:
+    print('Versatile')
